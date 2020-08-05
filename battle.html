@@ -5,9 +5,31 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <h1>BattleShip</h1>
+    <center><h1>BattleShip</h1></center> 
+
+    <link type="text/css" href="battle.css" rel="stylesheet">
+
         <script src="battle.js"></script>
 
-        
+    <center><button onclick="myFunction()">Give us Feedback</button></center> 
+
+        <p id="battle"></p>
+
+        <script>
+    function myFunction() {
+    var txt;
+    var person = prompt("Please Give Us Feedback:", "Gives us your honest opinion");
+    if (person == null || person == "Thanks") {
+      txt = "Thanks";
+    } else {
+      txt = "Thanks " + person + "For The Feedback";
+    }
+    document.getElementById("battle").battle.html = txt;
+ }
+        </script>
+
+
+
+
     </body>
     </html>
