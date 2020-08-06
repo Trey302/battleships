@@ -19,16 +19,26 @@
     function myFunction() {
     var txt;
     var person = prompt("Please Give Us Feedback:", "Gives us your honest opinion");
-    if (person == null || person == "Thanks") {
-      txt = "Thanks";
+    if (person == txt ||"") {
+      alert = "Thanks, For The Feedback";
     } else {
-      txt = "Thanks " + person + "For The Feedback";
+      alert = "Maybe " + person + "Later";
     }
     document.getElementById("battle").battle.html = txt;
  }
-        </script>
+</script>
 
 
+
+<center><button id="btnreplay" class="button" onclick="replay()">Play Again?</button></center> 
+
+    <script>
+     function replay(){
+    location.reload();
+    document.getElementById('endscreen').style.display = 'none';
+}
+
+    </script>
 
 
     </body>
