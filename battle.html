@@ -6,7 +6,7 @@
     </head>
     <body>
     <center><h1>BattleShip</h1></center> 
-
+    
     <link type="text/css" href="battle.css" rel="stylesheet">
 
         <script src="battle.js"></script>
@@ -16,16 +16,16 @@
         <p id="battle"></p>
 
         <script>
-    function myFunction() {
-    var txt;
-    var person = prompt("Please Give Us Feedback:", "Gives us your honest opinion");
-    if (person == txt ||"") {
-      alert = "Thanks, For The Feedback";
-    } else {
-      alert = "Maybe " + person + "Later";
-    }
-    document.getElementById("battle").battle.html = txt;
- }
+ function myFunction() {
+  var txt;
+  var person = prompt("Please Give us Feedback", "Please Give us Feedback");
+  if (person == txt || person == "Thanks, For The Feedback") {
+    alert = txt = "Maybe Later.";
+  } else {
+    alert = txt = "Thanks, " + person + "For The Feedback";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
 </script>
 
 
